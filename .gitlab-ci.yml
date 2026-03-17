@@ -17,9 +17,9 @@ pages:
   dependencies:
     - build
   script:
-  - mkdir -p public
-  - cp -r dist/* public/
-  - cp public/index.html public/404.html  # SPA fallback
+    - rm -rf public
+    - cp dist/index.html dist/404.html
+    - mv dist public
   artifacts:
     paths:
       - public
