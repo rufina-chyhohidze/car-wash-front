@@ -42,7 +42,7 @@ export default function Home() {
                 <Container maxWidth={"xl"}  sx={{ px: { xs: 3, md: 8 } }}>
                     <Grid container spacing={8} alignItems="center">
 
-                        <Grid item xs={12} md={6}>
+                        <Grid size={{xs:12, md:6}}>
                             <Typography
                                 variant="h2"
                                 fontWeight="bold"
@@ -128,7 +128,7 @@ export default function Home() {
                         </Grid>
 
                         {/* Video */}
-                        <Grid item xs={12} md={6}>
+                        <Grid size={{xs:12, md:6}}>
                             <Paper
                                 elevation={0}
                                 sx={{
@@ -203,7 +203,7 @@ export default function Home() {
 
                     <Grid container spacing={3} justifyContent="center">
                         {processImages.map((item, index) => (
-                            <Grid item xs={12} sm={6} lg={3} key={index}>
+                            <Grid size={{xs:12, md:6, lg:3}} key={index}>
                                 <Card
                                     sx={{
                                         height: "100%",
@@ -311,7 +311,7 @@ export default function Home() {
                             title: "Mesh Reconstruction",
                             description: "Poisson surface reconstruction for watertight, production-ready models."
                         }].map((feat, idx) => (
-                            <Grid item xs={12} md={4} key={idx} sx={{ display: "flex" }}>
+                            <Grid size={{xs:12, md:6}} key={idx} sx={{ display: "flex" }}>
                                 <Card
                                     sx={{
                                         width: "100%",
@@ -398,7 +398,7 @@ export default function Home() {
                     </Typography>
 
                     <Grid container spacing={6} alignItems="center">
-                        <Grid item xs={12} md={6}>
+                        <Grid size={{xs:12, md:6}}>
                             <Box
                                 component="img"
                                 src="/images/result.png"
@@ -411,7 +411,7 @@ export default function Home() {
                                 }}
                             />
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid size={{xs:12, md:6}}>
                             <Typography
                                 variant="h4"
                                 gutterBottom

@@ -84,7 +84,7 @@ export default function Project() {
                 <Container maxWidth="xl" sx={{ px: { xs: 3, md: 8 } }}>
                     <Grid container spacing={6}>
                         {projectSections.map((section, idx) => (
-                            <Grid item xs={12} key={idx}>
+                            <Grid size={{xs:12}} key={idx}>
                                 <Card
                                     sx={{
                                         background: "linear-gradient(145deg, #1F2937, #111827)",
