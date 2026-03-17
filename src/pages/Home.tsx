@@ -19,10 +19,10 @@ import {Link} from "react-router-dom";
 import Footer from "../components/Footer.tsx";
 
 const processImages = [
-    { title: "Raw Point Cloud", img: "/images/raw.png" },
-    { title: "Filtering Noise", img: "/images/filter.png" },
-    { title: "Segmentation", img: "/images/segmentation.png" },
-    { title: "Final Mesh", img: "/images/mesh.png" }
+    { title: "Raw Point Cloud", img: "/images/ST1.png" },
+    { title: "Filtering Noise", img: "/images/st2.png" },
+    { title: "Segmentation", img: "/images/st3.jpeg" },
+    { title: "Final Mesh", img: "/images/st4.jpeg" }
 ];
 
 export default function Home() {
@@ -149,17 +149,18 @@ export default function Home() {
                                     }}
                                 >
                                     <video
-                                        width="100%"
-                                        height="100%"
                                         controls
                                         style={{
                                             position: "absolute",
+                                            width: "100%",
+                                            height: "100%",
                                             top: 0,
                                             left: 0,
+                                            objectFit: "cover",
                                             borderRadius: "12px"
                                         }}
                                     >
-                                        <source src="/demo.mp4" />
+                                        <source src="/images/demo.mp4" type="video/mp4" />
                                     </video>
                                 </Box>
                             </Paper>
@@ -401,7 +402,7 @@ export default function Home() {
                         <Grid size={{xs:12, md:6}}>
                             <Box
                                 component="img"
-                                src="/images/result.png"
+                                src="/images/final.jpeg"
                                 alt="3D reconstruction result"
                                 width="100%"
                                 sx={{

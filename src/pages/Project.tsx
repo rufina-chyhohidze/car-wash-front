@@ -5,9 +5,10 @@ import {
     Grid,
     Card,
     CardContent,
-    Divider
+    Divider, Button
 } from "@mui/material";
 import Footer from "../components/Footer.tsx";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const projectSections = [
     {
@@ -71,7 +72,6 @@ export default function Project() {
             }}
         >
             <Box sx={{ flexGrow: 1, py: 10 }}>
-                {/* Page Header */}
                 <Box sx={{ textAlign: "center", mb: 10, px: { xs: 3, md: 8 } }}>
                     <Typography variant="h3" fontWeight="bold" mb={2} sx={{ color: "#F3F4F6" }}>
                         Project Description
@@ -111,6 +111,80 @@ export default function Project() {
                             </Grid>
                         ))}
                     </Grid>
+                </Container>
+            </Box>
+
+            <Box sx={{ mt: 10, px: { xs: 3, md: 8 } }}>
+                <Container maxWidth="xl">
+                    <Card
+                        sx={{
+                            background: "linear-gradient(145deg, #1F2937, #111827)",
+                            borderRadius: 3,
+                            p: 4,
+                            border: "1px solid rgba(255,255,255,0.05)"
+                        }}
+                    >
+                        <CardContent>
+
+                            <Typography
+                                variant="h5"
+                                fontWeight="bold"
+                                mb={2}
+                                sx={{ color: "#F3F4F6" }}
+                            >
+                                Full Project Documentation
+                            </Typography>
+
+                            <Typography
+                                sx={{
+                                    color: "#6B7280",
+                                    mb: 3,
+                                    maxWidth: 800
+                                }}
+                            >
+                                You can read our complete technical documentation describing
+                                the full pipeline, research decisions, experiments, and final
+                                implementation details.
+                            </Typography>
+
+                            <Box
+                                sx={{
+                                    width: "100%",
+                                    height: 500,
+                                    borderRadius: 2,
+                                    overflow: "hidden",
+                                    border: "1px solid rgba(255,255,255,0.1)",
+                                    mb: 3
+                                }}
+                            >
+                                <iframe
+                                    src="/docs/Article.pdf"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: "none" }}
+                                    title="Project Documentation"
+                                />
+                            </Box>
+
+                            <Button
+                                variant="contained"
+                                startIcon={<DescriptionIcon />}
+                                href="/docs/Article.pdf"
+                                target="_blank"
+                                sx={{
+                                    background: "#22d3ee",
+                                    color: "#0b0f19",
+                                    fontWeight: "bold",
+                                    "&:hover": {
+                                        background: "#06b6d4"
+                                    }
+                                }}
+                            >
+                                Open Full Document
+                            </Button>
+
+                        </CardContent>
+                    </Card>
                 </Container>
             </Box>
 
