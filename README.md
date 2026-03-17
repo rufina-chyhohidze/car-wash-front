@@ -1,75 +1,48 @@
-# React + TypeScript + Vite
+# CareWash Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The **CareWash Frontend** is a React-based web application for visualizing and interacting with 3D car reconstruction pipelines. It provides:
 
-Currently, two official plugins are available:
+- A homepage highlighting the processing pipeline and core technologies
+- Project description pages with detailed workflow and 3D visualization
+- Team introduction section with photos, LinkedIn QR codes, and roles
+- Embedded demo videos and downloadable resources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The app is styled with **Material-UI (MUI)**, fully responsive, and uses static assets for images, videos, and PDFs.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
+- **Responsive UI:** Designed with MUI Grid, Cards, and Containers for desktop and mobile
+- **Video Demo:** Embedded `.mp4` demo with play controls
+- **Core Technologies & Pipeline:** Interactive cards and images with hover effects
+- **Team Section:** Consistent card sizes with photos, roles, icons, and LinkedIn QR codes
+- **Multi-page Routing:** Uses `react-router-dom` for `/`, `/project`, `/about` pages
+- **Footer Component:** Reusable across all pages
+- **Static Assets:** Images, videos, PDFs, and favicon are served from `/public`
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React 18+**
+- **Material-UI (MUI v5)**
+- **React Router DOM**
+- **Node.js & npm**
+- **Static assets**: `.mp4`, `.jpeg`, `.png`, `.pdf`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://gitlab.com/kdg-ti/the-lab/teams-25-26/25-the-three/carewash_front.git
+cd carewash_front
+
+npm install
+npm start
