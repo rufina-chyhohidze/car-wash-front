@@ -81,15 +81,7 @@ export default function About() {
 
                         {teamMembers.map((member, idx) => (
 
-                            <Grid
-                                item
-                                xs={12}
-                                sm={6}
-                                md={4}
-                                key={idx}
-                                display="flex"
-                                justifyContent="center"
-                            >
+                            <Grid size={{xs:12, sm:6, md:4}} key={idx} display="flex" justifyContent="center" >
 
                                 <Card
                                     sx={{
