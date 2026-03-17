@@ -1,7 +1,7 @@
 {
   "name": "carewash_front",
-  "private": true,
-  "version": "0.0.0",
+  "1ersion": "0.0.0",
+  "homepage": "/the-lab/teams-25-26/25-the-three/carewash_front",
   "type": "module",
   "scripts": {
     "dev": "vite",
