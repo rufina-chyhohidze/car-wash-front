@@ -88,6 +88,9 @@ export default function Home() {
                                     variant="contained"
                                     startIcon={<PlayCircleOutlineIcon />}
                                     size="large"
+                                    component="a"
+                                    href="/images/demo.mp4"
+                                    target="_blank"
                                     sx={{
                                         py: 1.5,
                                         px: 4,
@@ -273,7 +276,7 @@ export default function Home() {
                 alignItems: "center",
                 py:8
             }}>
-                <Container maxWidth="lg" sx={{ width: "50%" }}>
+                <Container maxWidth="xl" sx={{ px: { xs:3, md:8 } }}>
                     <Typography
                         variant="h3"
                         textAlign="center"
@@ -312,7 +315,7 @@ export default function Home() {
                             title: "Mesh Reconstruction",
                             description: "Poisson surface reconstruction for watertight, production-ready models."
                         }].map((feat, idx) => (
-                            <Grid size={{xs:12, md:6}} key={idx} sx={{ display: "flex" }}>
+                            <Grid size={{xs:12, md:6, lg:4}} key={idx} sx={{ display: "flex" }}>
                                 <Card
                                     sx={{
                                         width: "100%",

@@ -207,8 +207,6 @@ export default function About() {
             </Box>
 
             <Footer />
-
-            <Footer />
         </Box>
     );
 }
