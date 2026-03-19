@@ -188,6 +188,78 @@ export default function Project() {
                 </Container>
             </Box>
 
+            <Box sx={{ mt: 10, px: { xs: 3, md: 8 } }}>
+                <Container maxWidth="xl">
+                    <Card
+                        sx={{
+                            background: "linear-gradient(145deg, #1F2937, #111827)",
+                            borderRadius: 3,
+                            p: 4,
+                            border: "1px solid rgba(255,255,255,0.05)"
+                        }}
+                    >
+                        <CardContent>
+
+                            <Typography
+                                variant="h5"
+                                fontWeight="bold"
+                                mb={2}
+                                sx={{ color: "#F3F4F6" }}
+                            >
+                                Presentation slides
+                            </Typography>
+
+                            <Typography
+                                sx={{
+                                    color: "#6B7280",
+                                    mb: 3,
+                                    maxWidth: 800
+                                }}
+                            >
+                                You can check out our presentation slides right here
+                            </Typography>
+
+                            <Box
+                                sx={{
+                                    width: "100%",
+                                    height: 500,
+                                    borderRadius: 2,
+                                    overflow: "hidden",
+                                    border: "1px solid rgba(255,255,255,0.1)",
+                                    mb: 3
+                                }}
+                            >
+                                <iframe
+                                    src="/docs/The%20Lab%202026%20Care%20Wash.pdf"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: "none" }}
+                                    title="Presentation slides"
+                                />
+                            </Box>
+
+                            <Button
+                                variant="contained"
+                                startIcon={<DescriptionIcon />}
+                                href="/docs/The%20Lab%202026%20Care%20Wash.pdf"
+                                target="_blank"
+                                sx={{
+                                    background: "#22d3ee",
+                                    color: "#0b0f19",
+                                    fontWeight: "bold",
+                                    "&:hover": {
+                                        background: "#06b6d4"
+                                    }
+                                }}
+                            >
+                                Open Presentation slides
+                            </Button>
+
+                        </CardContent>
+                    </Card>
+                </Container>
+            </Box>
+
             <Footer>
 
             </Footer>
