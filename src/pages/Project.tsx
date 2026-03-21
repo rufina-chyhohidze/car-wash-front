@@ -230,7 +230,7 @@ export default function Project() {
                                 }}
                             >
                                 <iframe
-                                    src="/docs/The%20Lab%202026%20Care%20Wash.pdf"
+                                    src="/docs/TheLab2026CareWashFINAL.pptx.pdf"
                                     width="100%"
                                     height="100%"
                                     style={{ border: "none" }}
@@ -241,7 +241,7 @@ export default function Project() {
                             <Button
                                 variant="contained"
                                 startIcon={<DescriptionIcon />}
-                                href="/docs/The%20Lab%202026%20Care%20Wash.pdf"
+                                href="/docs/TheLab2026CareWashFINAL.pptx.pdf"
                                 target="_blank"
                                 sx={{
                                     background: "#22d3ee",
