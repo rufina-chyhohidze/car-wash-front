@@ -158,7 +158,7 @@ export default function Project() {
                                 }}
                             >
                                 <iframe
-                                    src="/docs/article(2).pdf"
+                                    src="/docs/Article-2.pdf"
                                     width="100%"
                                     height="100%"
                                     style={{ border: "none" }}
@@ -169,7 +169,7 @@ export default function Project() {
                             <Button
                                 variant="contained"
                                 startIcon={<DescriptionIcon />}
-                                href="/docs/article(2).pdf"
+                                href="/docs/Article-2.pdf"
                                 target="_blank"
                                 sx={{
                                     background: "#22d3ee",
